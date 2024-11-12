@@ -1,0 +1,588 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        nav {
+            height: 10vh;
+            display: flex;
+            color: black;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding-top: 1%;
+           
+        }
+
+        .left {
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .center {
+            width: 60vw;
+        }
+
+        .center ul {
+            height: 4vh;
+            width: 100%;
+            list-style: none;
+            gap: 1px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center ul li {
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .right {
+            width: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: green;
+            border-radius: 20%;
+
+        }
+
+        .img {
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            background-size: 100% 100%;
+            color: white;
+            background-image: url('bridge.png');
+            filter: brightness(85%);
+        }
+
+        .text {
+            text-align: center;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top: 5%;
+            margin-left: 48%;
+            font-size: smaller;
+
+        }
+
+        .text2 {
+            text-align: center;
+            margin-top: 2%;
+            margin-left: 5%;
+            font-size: xx-large;
+        }
+
+        .t1 {
+            margin-bottom: 0%;
+            padding-top: 0%;
+        }
+
+        .t2 {
+            color:#00E5A1;
+            
+            margin-top: 0%;
+        }
+
+        .vector {
+            text-align: center;
+            margin-left: 50%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .arrow {
+            text-align: center;
+            position: absolute;
+            margin-left: 10px;
+        }
+
+        .text3 {
+            margin-left: 4%;
+        }
+
+        .footer {
+            width: 80%;
+            height: 9%;
+            background-color: white;
+            margin-left: 10%;
+            color: black;
+            padding-left: 0%;
+            border-radius: 7px;
+        }
+
+        #one {
+            padding-left: 0%;
+            padding-top: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 250px;
+            color: black;
+            left: 5%;
+            margin-left: 0%;
+
+
+        }
+
+        .icon-txt {
+            font-size: small;
+            margin-left: 2%;
+            padding-right: 2%;
+            gap: 0%;
+            position: relative;
+
+        }
+
+        .loc {
+            text-align: center;
+            object-fit: cover;
+            background-color: rgb(156, 177, 170);
+
+        }
+
+        .loctxt {
+            margin-left: 50%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            left: 25%;
+
+        }
+
+        .city {
+            margin-left: 50%;
+            font-size: 15px;
+            text-align: center;
+            position: absolute;
+            top: 2%;
+            right: 5%;
+        }
+
+        .hometxt {
+            margin-left: 50%;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            left: 25%;
+        }
+
+        .flat {
+            margin-left: 50%;
+            font-size: 13px;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            right: 3%;
+        }
+
+        .search {
+            background-color: aquamarine;
+
+        }
+
+        .chef {
+           margin-left: 5%;
+        }
+
+        .setimg {
+            background-color: #1A2440;
+            height: 170vh;
+            width: 100vw;
+        }
+
+        .rate {
+            margin-left: 9%;
+            margin-top: 2%;
+        }
+
+        .third {
+            margin-left: 15%;
+        }
+
+        .img2 {
+            margin-left: 4%;
+
+        }
+
+        .img3 {
+            margin-left: 10%;
+        }
+
+        .last {
+            background-color: #1A2440;
+            height: 205vh;
+            width: 90vw;
+            margin-left: 5%;
+
+        }
+
+        .text4 {
+            margin-left: 4%;
+            padding-top: 2%;
+
+        }
+
+        .smalltxt {
+            margin-left: 4%;
+        }
+
+        .num {
+            display: flex;
+            align-items: left;
+            justify-content: space-evenly;
+            margin-top: 5%;
+
+        }
+
+        .six {
+            margin-left: 10%;
+            margin-top: 4%;
+            color: #00E5A1;
+
+        }
+
+        .sixtxt {
+            margin-left: 0%;
+            font-size: smaller;
+            margin-top: 9%;
+
+
+        }
+
+        .txt3 {
+            margin-left: 0%;
+            font-size: smaller;
+            margin-top: 9%;
+            padding-left: 0;
+
+        }
+
+        .txt6 {
+            margin-left: 0%;
+            font-size: smaller;
+            margin-top: 9%;
+            padding-left: 0;
+
+        }
+
+        .hr {
+            width: 70%;
+        }
+
+        .location {
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .loc1 {
+            color: #00E5A1;
+        }
+
+        .location2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .info1 {
+            margin-top: 20%;
+        }
+
+        .tele {
+            margin-left: 6%;
+        }
+
+        .telinfo {
+            margin-left: 6%;
+        }
+
+        .grp {
+            margin-left: 6%;
+            margin-top: 3%;
+        }
+
+        .btn {
+
+            padding-top: 5%;
+        }
+
+        .submit {
+            margin-left: 30%;
+            margin-top: 6%;
+            padding-left: 1%;
+            padding-right: 1%;
+            background-color: #00E5A1;
+
+        }
+
+        .contain {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .mapimg {
+            margin-left: 8%;
+            margin-top: 8%;
+        }
+
+        .call {
+            text-align: center;
+            margin-top: 5%;
+            color: black;
+        }
+        .v1{
+            text-align: center;
+            margin-left: 48%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+            position: absolute;
+            margin-left: 15px;
+           
+        }
+        .contact1{
+            color: black;
+            text-align: center;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6%;
+            gap: 1%;
+            
+        }
+        .twi{
+            background-color: #00E5A1;
+            border-radius: 15px;
+            padding: 0.2rem;
+        }
+        .face{
+            background-color: white;
+            border-radius: 15px;
+            padding: 0.1rem;
+        }
+        .insta{
+            background-color: white;
+            border-radius: 15px;
+            padding: 0.2rem;
+        }
+        .final{
+            text-align: center;
+        }
+        .finaltxt{
+            color: black;
+            font-size: smaller;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <nav>
+            <div class="left">
+                <img src="piramal1.png" height="50px">
+            </div>
+            <div class="center">
+                <ul>
+                    <li>HOME</li>
+                    <li>OVERVIEW</li>
+                    <li>AMENITIES</li>
+                    <li>GALLERY</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h4>ENQUIRE NOW</h4>
+            </div>
+        </nav>
+        <div class="text">
+            <h3>MUMBAI</h3>
+        </div>
+        <div class="text2">
+            <h1 class="t1">PROJECT <br>ARANYA</h1>
+            <h4 class="t2">Pirimal Groups</h4>
+        </div>
+        <div class="vector">
+            <img src="Vector.png" height="100px">
+            <div class="arrow">
+                <img src="arrow-up (1) 1.png">
+            </div>
+        </div>
+        <div class="text3">
+            <h3>Search Your Configuration</h3>
+        </div>
+        <div class="footer">
+            <div class="foot" id="one">
+                <div class="icon-txt">
+                    <span class="loctxt">Location <br>
+                        <p class="city">South Mumbai</p>
+                    </span>
+                    <img src="Vector (2).png" height="40px" class="loc">
+                </div>
+                <div class="icon-txt">
+                    <span class="hometxt">Property <br>
+                        <p class="flat">2 BHK</p>
+                    </span>
+                    <img src="home 1.png" height="40px" class="loc">
+                </div>
+                <div class="icon-txt">
+                    <span class="loctxt">Budget <br>
+                        <p class="city">90L-1.5Cr</p>
+                    </span>
+                    <img src="Vector (1).png" height="30px" class="loc">
+                </div>
+                <div class="search">
+                    <img src="search-interface-symbol 2 (1).png" height="35px">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="setimg">
+            <div class="chef">
+                <img src="landing  page 2.png" alt="" height="1000px">
+            </div>
+            <div class="rate">
+                <img src="lNDING PAGE 2 HIT.png" height="70px" width="1200px">
+
+            </div>
+        </div>
+        <br>
+        <div class="third">
+            <img src="Amenties 2.png" height="550px">
+        </div>
+        <div class="img2">
+            <img src="image 2.png" height="400px" width="1400px">
+        </div>
+        <br><br>
+        <div class="img3">
+            <img src="Amenties 2.jpg" height="550px" width="1200px">
+        </div>
+        <br>
+        <div class="last">
+            <div class="text4">
+                <h1>SPECTACULAR <br>SURROUNDINGS<br>
+                    AS FAR AS THE EYE CAN SEE</h1>
+            </div>
+            <div class="smalltxt">
+                <p>Piramal Aranya is an ode to perfection. It balances <br>contemporary design with the scenic natural
+                    beauty of its <br>environment. Every residence invites you to soak in the <br>
+                    surroundings, from the endless greenery of Rani Baug on the <br> western side and the shimmering
+                    Arabian Sea on the east. <br> Avyan at Piramal Aranya will be home to something truly
+                    <br>spectacular with premium dual aspect living
+                </p>
+            </div>
+            <div class="num">
+                <div class="div1">
+                    <h1 class="six">66%</h1>
+                    <p class="sixtxt">Botanical Garden views</p>
+                </div>
+                <div class="div2">
+                    <h1 class="six">33%</h1>
+                    <p class="txt3">Mumbai harbour and Botanical Garden views</p>
+                </div>
+                <div class="div3">
+                    <h1 class="six">66%</h1>
+                    <p class="txt6">Mumbai harbour views</p>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="location">
+                <p class="loc1">Location</p>
+                <h1 class="neighbour">NEIGHBORHOOD</h1>
+            </div>
+            <div class="location2">
+                <div class="a1">
+                    <h2 class="h2">. Bhau Daji Lad Museum</h2>
+                    <p class="p1">3.5Km Away</p>
+                    <h2 class="h3">. Magen David Synagogue</h2>
+                    <p class="p2">3.5Km Away</p>
+                </div>
+                <div class="a1">
+                    <h2 class="h2">. St. Paul’s Tamil Church</h2>
+                    <p class="p1">3.5Km Away</p>
+                    <h2 class="h3">. Byculla Club − Fire Temple</h2>
+                    <p class="p2">3.5Km Away</p>
+                </div>
+
+            </div>
+            <div class="contain">
+                <div class="con">
+                    <div class="info1">
+                        <h1 class="tele">CONTACT US</h1>
+                        <p class="telinfo">Please enter details below and we shall get in <br>touch with you shortly.
+                        </p>
+                    </div>
+                    <div class="grp">
+                        <img src="Group 10.png" width="300px">
+                    </div>
+                    <div clas="btn">
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="image 3.png" height="500px" width="700px" class="mapimg">
+                </div>
+            </div>
+
+        </div>
+        <div class="call">
+            <p>Call us</p>
+        </div>
+        <div class="v1">
+            <img src="Rectangle 94.png" height="60px">
+            <div class="logo">
+                <img src="call (1) 1.png">
+            </div>
+
+        </div>
+        <div class="contact1">
+            <h1>+ 022 506 47538</h1>
+        </div>
+        <div class="icon">
+            <img src="twitter 3.png"  class="twi">
+            <img src="facebook 2.png" class="face">
+            <img src="instagram 2.png" class="insta">
+        </div>
+        <div class="final">
+            <img src="Untitled-3 1.png" height="60px">
+            <p class="finaltxt"> © 2023 Piramal. ALL RIGHTS RESERVED. </p>
+        </div>
+
+</body>
+
+</html>
